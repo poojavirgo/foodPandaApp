@@ -75,7 +75,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### LOGIN PAGE
 ![image](https://user-images.githubusercontent.com/21308982/199393701-ecfeba7b-6f26-4700-9ef6-f2f470e8207f.png)
 
-### SIGNUP PAGE:
+### SIGNUP PAGE
 ![image](https://user-images.githubusercontent.com/21308982/199393973-65b26a6e-d8c4-4474-af58-d2949fde6ab7.png)
 
+### MENU PAGE
+![image](https://user-images.githubusercontent.com/21308982/199394388-321afb42-d079-4e69-a2af-e020a0b17b7f.png)
 
