@@ -1,0 +1,24 @@
+
+/* The transition rules */
+.bg {
+	transition: background-color 0.4s, color 0.6s;
+}
+.op {	transition: opacity 0.4s;}
+.trans {	transition: transform 0.4s;}
+
+/* the things to transition */
+section:hover .op {	opacity: 0.5;}
+section:hover .rot-z {	transform: rotateZ(0.2turn); }
+section:hover .scale {	transform: scale(1.2); }
+section:hover .rot-x {	transform: rotateX(0.2turn); }
+section:hover .rot-y {	transform: rotateY(0.2turn); }
+section:hover .translate-x {	transform: translateX(-1em); }
+section:hover .translate-y {	transform: translateY(-1em); }
+section:hover .bg {
+	background-color: hsl(200, 50%, 15%);
+	color: hsl(200, 50%, 80%);
+}
+
+section.adjacent div:nth-child(1):hover + div {
+	transform: translateX(2em);
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Transition details</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<link id="stylesheet" rel="stylesheet" href="css/details.css">
+	</head>
+	<body>
+		<header>
+			<h1>Transition delay and timing-function</h1>
+			<nav>
+				<a href="index.html">home</a>
+				<a href="basic.html">basics</a>
+				<a href="images.html">images</a>
+				<a href="keyframes.html">keyframes</a>
+				<a href="timing.html">timing</a>
+				<a href="face.html">drawing</a>
+				<a href="cards.html">Cards</a>
+				<a href="svg.html">SVG animation</a>
+			</nav>
+		</header>
+		<main>
+			<p>
+				Here we have added a slightly different <code>transition-delay</code> to each element.
+				So the transition is triggered at 0.02s intervals.
+				We have also used a different <code>transition-timing-function</code> for each group.
+			</p>
+			<p>
+				Hover over the <code>&lt;article&gt;</code> elements to activate the transitions.
+			</p>
+			<section>
+				<h2>Ease (default)</h2>
+				<article class="delay ease">
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+				</article>
+			</section>
+			<section>
+				<h2>Linear (constant)</h2>
+				<article class="delay linear">
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+				</article>
+			</section>
+			<section>
+				<h2>Ease-in (starts slow, ends faster)</h2>
+				<article class="delay in">
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+				</article>
+			</section>
+			<section>
+				<h2>Ease-out (starts fast, ends slower)</h2>
+				<article class="delay out">
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+				</article>
+			</section>
+			<section>
+				<h2>Ease-in-out (starts and ends slower)</h2>
+				<article class="delay inout">
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+				</article>
+			</section>
+			<section>
+				<h2><a href="https://cubic-bezier.com/#.25,.75,.75,.25">cubic-bezier(0.25, 0.75, 0.75, 0.25)</a></h2>
+				<article class="delay custom">
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+					<div></div><div></div><div></div><div></div><div></div>
+				</article>
+			</section>
+		</main>
+		<script src="js/scripts.js"></script>
+	</body>
+</html>

@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Raleway&display=swap');
+
+body {
+	--lightness: 40%;
+	--saturation: 80%;
+	text-align: center;
+	font-family: "Raleway";
+	margin: 0;
+	font-size: 1.2em;
+}
+
+h1, h2 {
+	font-family: "Architects Daughter";
+}
+h1 {
+	font-size: 3em;
+	text-shadow: 0 0 5px black
+}
+h2 {
+	font-size: 2.5em;
+}
+p {
+	text-align: justify;
+	line-height: 1.6em;
+}
+
+header {
+	overflow: auto;
+	padding-bottom: 1em;
+	background-color: hsl(60, 70%, 50%);
+	color: white;
+	background-image: url(http://placekitten.com/600/400);
+	background-size: cover;
+	background-blend-mode: color-burn	;
+}
+
+header img {
+	width: 50px;
+}
+
+
+.html {
+	background-color: hsl(120, var(--saturation), var(--lightness));
+	background-image: url(http://placekitten.com/400/400);
+}
+.css {
+	background-color: hsl(0, var(--saturation), var(--lightness));
+	background-image: url(http://placekitten.com/500/500);
+}
+.js {
+	background-color: hsl(240, var(--saturation), var(--lightness));
+	background-image: url(http://placekitten.com/600/600);
+}
+
+p {
+	max-width: 50ch;
+	margin: 1em auto;
+}
+
+
+section {
+	overflow: auto;
+	color: white;
+	padding: 1em;
+	display: grid;
+	grid-template-columns: 80px 1fr;
+	grid-template-rows: min-content 1fr;
+	grid-gap: 0.5em;
+	background-size: cover;
+	background-blend-mode: soft-light;
+}
+
+section img {
+	grid-column: 1 / 2;
+	grid-row: 1 / 2;
+	width: 100%;
+}
+section h2 {
+	text-align: left;
+	margin: 0.25em 0;
+	grid-column: 2 / 3;
+}
+section p {
+	grid-column: 1 / 3;
+}
+
+@media screen and (min-width: 900px) {
+
+	main {
+		font-size: 1.2em;
+	}
+
+	section {
+		grid-template-columns: 350px 1fr;
+	}
+
+	section img {
+		grid-row: 1 / 3;
+	}
+	section h2 {
+		margin: 0;
+	}
+	section p {
+		grid-column: 2 / 3;
+	}
+}
+
+
+@media screen and (min-width: 1100px) {
+	main {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	section {
+		flex-basis: 50%;
+		box-sizing: border-box;
+		grid-template-columns: 1fr 80px minmax(auto, 50ch) 1fr;
+	}
+	section img {
+		grid-row: 1 / 2;
+		grid-column: 2 / 3;
+	}
+	section h2 {
+		grid-column: 3 / 4;
+		margin: 0;
+	}
+	section p {
+		grid-column: 2 / 4;
+	}
+
+	section:nth-of-type(1) {
+		flex-basis: 100%;
+		grid-template-columns: 1fr 350px minmax(auto, 50ch) 1fr;
+	}
+	section:nth-of-type(1) img {
+		grid-row: 1 / 3;
+	}
+	section:nth-of-type(1) p {
+		grid-column: 3 / 4;
+	}
+
+}

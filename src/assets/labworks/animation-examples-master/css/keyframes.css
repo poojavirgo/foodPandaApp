@@ -1,0 +1,43 @@
+figure {
+	margin: 0.5em;
+}
+img {
+	width: 100%;
+}
+
+.animateIn.clicked {
+	animation: animateIn 5s;
+}
+.stretchMe.clicked {
+	animation: stretchMe 2s;
+}
+
+@keyframes animateIn {
+	0% {
+		opacity: 0;
+		transform: scale(0);
+	}
+
+	60% {
+		transform: scale(1) rotate(1turn);
+	}
+	80% {
+		opacity: 1;
+		transform: none;
+	}
+	90% {
+		transform: translateY(-1em);
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes stretchMe {
+	25% {
+		transform: scaleX(0);
+	}
+	75% {
+		transform: scaleX(2);
+	}
+}

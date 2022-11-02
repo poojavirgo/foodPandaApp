@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>keyframes</title>
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/keyframes.css">
+	</head>
+	<body>
+		<header>
+			<h1>Animate on toggle</h1>
+			<nav>
+				<a href="index.html">home</a>
+				<a href="basic.html">basics</a>
+				<a href="images.html">images</a>
+				<a href="keyframes.html">keyframes</a>
+				<a href="timing.html">timing</a>
+				<a href="face.html">drawing</a>
+				<a href="cards.html">Cards</a>
+				<a href="svg.html">SVG animation</a>
+			</nav>
+		</header>
+		<main>
+			<p>
+				Using <code>@keyframes</code> we can animate elements.
+			</p>
+			<section>
+				<figure class="animateIn clickable">
+					<figcaption>A random collection of moves</figcaption>
+					<img src="https://placekitten.com/400/200" alt="kitten1">
+				</figure>
+				<figure class="stretchMe clickable">
+					<figcaption>Stretchy</figcaption>
+					<img src="https://placekitten.com/400/200" alt="kitten1">
+				</figure>
+
+			</section>
+			<p>
+				Once it is finished, clicking the section will restart the animation.
+			</p>
+			<p>
+				This is because we animate based on a class which we add on the <code>click</code> event and remove on the <code>animationend</code> event.
+			</p>
+		</main>
+		<script src="js/scripts.js"></script>
+		<script src="js/keyframes.js"></script>
+	</body>
+</html>

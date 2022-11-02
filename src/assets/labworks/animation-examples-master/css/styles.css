@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
+body {
+	margin: 0;
+	font-family: "Karla", sans-serif;
+	background-color: hsl(20, 80%, 40%);
+	color: white;
+	max-width: 1000px;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+header {
+	overflow: auto;
+	font-size: 1.2em;
+	background-color: hsl(20, 50%, 30%);
+	color: white;
+	box-sizing: border-box;
+}
+
+h1 {
+	padding: 0 1rem;
+}
+
+header a {
+	color: white;
+	text-decoration: none;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+}
+
+nav a {
+	background-color: hsl(20, 80%, 40%);
+	padding: 0.5rem 1rem;
+	color: white;
+	text-decoration: none;
+	transition: background-color 0.4s, color 0.3s;
+}
+a {
+	color: inherit;
+}
+nav a:hover, nav a.current, main {
+	background-color: hsl(20, 80%, 50%);
+	color: hsl(60, 50%, 90%);
+}
+
+main {
+	font-size: 1.7rem;
+	padding: 0.5rem;
+	animation: fadeIn 1s;
+}
+
+section {
+	margin-bottom: 1rem;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	background-color: hsl(20, 80%, 45%);
+	box-sizing: border-box;
+}
+
+div {
+	background-color: hsl(200, 50%, 30%);
+	color: hsl(200, 50%, 90%);
+	padding: 0.5em 1em;
+	margin: 0.1em;
+	transition: 1s;
+	transition-timing-function: ease;
+	box-sizing: border-box;
+}
+
+code {
+	background-color: hsl(120, 50%, 30%);
+	padding: 0.1em 0.2em;
+}
+
+@keyframes fadeIn {
+	0% {
+		filter: opacity(0);
+	}
+	100% {
+		filter: none;
+	}
+}
+
+@media screen and (min-width: 750px) {
+	nav {
+		flex-direction: row;
+	}
+	nav a {
+		border-top-left-radius: 3px;
+		border-top-right-radius: 3px;
+		filter: drop-shadow(0 0 2px hsl(20, 50%, 15%));
+		margin: 0 2px;
+	}
+	nav a:hover, nav a.current {
+		filter: drop-shadow(0 0 2px hsl(20, 50%, 35%));
+	}
+	main {
+		padding: 2rem;
+	}
+}

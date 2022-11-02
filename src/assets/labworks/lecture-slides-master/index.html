@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Splash screen</title>
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/styles/atom-one-dark.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/custom.css">
+	</head>
+	<body>
+
+		<nav>
+			<a href="?">Home</a>
+			<button id="configToggler">&#9432;</button>
+		</nav>
+
+		<main id="slideDeck" tabIndex=0></main>
+
+		<footer>
+			<small>splash v0.5.2</small>
+			<section id="toolbar">
+				<button id="prev">&lt;</button>
+				<span id="current">0 of 0</span>
+				<button id="next">&gt;</button>
+			</section>
+			<small>&copy; De Montfort University</small>
+		</footer>
+		<div id="bar"><span id="progress"></span></div>
+
+		<article id="config" class="modal">
+			<h2>Splash!</h2>
+			<h3>
+				CTEC3905 slideshow viewer
+			</h3>
+			<p>
+				This is a demonstration project for CTEC3905.
+				It contains all the slides for the module.
+				The index presentation can be accessed using the home link at the top of the page.
+				It contains a slide with a link for each presentation in the system.
+			</p>
+			<p>
+				Swipe or use left/right arrow keys to view next/previous slides.
+				Or use the buttons at the bottom.
+			</p>
+			<p class="flex-center">
+				<input id="showHello" type="checkbox">
+				<label for="showHello">Show this message on load</label>
+			</p>
+
+			<p class="flex-center">
+				<input id="mapOn" type="checkbox">
+				<label for="mapOn">Default to map mode</label>
+			</p>
+
+			<p class="flex-center">
+				<input id="fullOn" type="checkbox">
+				<label for="fullOn">Hide menu and footer</label>
+			</p>
+
+			<button id="dismiss">OK</button>
+		</article>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js" integrity="sha512-L03kznCrNOfVxOUovR6ESfCz9Gfny7gihUX/huVbQB9zjODtYpxaVtIaAkpetoiyV2eqWbvxMH9fiSv5enX7bw==" crossorigin="anonymous"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.1/highlight.min.js"></script>
+		<script src="js/markdown.js"></script>
+		<script src="js/slides.js"></script>
+		<script src="js/config.js"></script>
+	</body>
+</html>

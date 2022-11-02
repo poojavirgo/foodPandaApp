@@ -1,0 +1,36 @@
+figure {
+	margin: 0.5em;
+}
+img {
+	transition: filter 0.4s;
+	width: 100%;
+}
+
+img.blur.active {
+	filter: blur(10px);
+}
+
+img.bright.active {
+	filter: brightness(0.1);
+}
+
+img.contrast.active {
+	filter: contrast(0.1);
+}
+
+img.bw.active {
+	filter: grayscale();
+}
+
+img.sepia.active {
+	filter: sepia();
+}
+
+img.shadow.active {
+	filter: drop-shadow(0 0 10px black);
+}
+
+
+img.active {
+	filter: none;
+}
